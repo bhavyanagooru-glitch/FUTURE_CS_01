@@ -40,3 +40,21 @@ Observation 1: HTTP Response Status
 - Security impact: No vulnerability can be concluded from this status code alone.
 - Evidence: Browser Developer Tools → Network → Headers.
 - Result: Informational observation only.
+
+Observation 2: HTTP Response Security Headers
+
+- Target: OWASP Juice Shop (local lab)
+- Evidence: Browser Developer Tools → Network → document request → Response Headers.
+- Headers observed: "X-Content-Type-Options: nosniff" and "X-Frame-Options: SAMEORIGIN".
+- Meaning: These headers provide browser-side security protections.
+- Assessment: Informational observation; no vulnerability confirmed.
+- Evidence screenshot: Refer to the uploaded screenshot if it shows these headers.
+
+Observation 3: Content Security Policy (CSP) Header
+
+- Target: OWASP Juice Shop (local lab)
+- Check performed: Inspected the main document response headers using Browser Developer Tools.
+- Observation: The "Content-Security-Policy" header was not visible in the inspected response.
+- Security impact: Not confirmed. Further verification is required before classifying this as a security issue.
+- Evidence: Browser Developer Tools → Network → document request → Response Headers.
+- Status: Preliminary observation.
