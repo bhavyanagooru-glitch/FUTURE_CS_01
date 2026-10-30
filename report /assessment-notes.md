@@ -58,3 +58,12 @@ Observation 3: Content Security Policy (CSP) Header
 - Security impact: Not confirmed. Further verification is required before classifying this as a security issue.
 - Evidence: Browser Developer Tools → Network → document request → Response Headers.
 - Status: Preliminary observation.
+
+Observation 4: Cookie Security Attributes
+
+- Target: OWASP Juice Shop (local lab)
+- Check performed: Inspected cookies using Firefox Developer Tools → Storage → Cookies.
+- Observation: The cookie table displayed "language", "GSAD", and "SID" entries. Some cookies showed "HttpOnly = True", while "Secure = False" was displayed. SameSite values included "Strict" and "None".
+- Security impact: Cookies without the Secure attribute may be exposed over unencrypted HTTP connections. The impact depends on the cookie's purpose and deployment configuration.
+- Evidence: Firefox Developer Tools → Storage → Cookies.
+- Status: Preliminary finding; verify each cookie's exact attributes before assigning a risk level.
