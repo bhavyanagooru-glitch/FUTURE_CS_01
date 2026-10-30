@@ -67,3 +67,15 @@ Observation 4: Cookie Security Attributes
 - Security impact: Cookies without the Secure attribute may be exposed over unencrypted HTTP connections. The impact depends on the cookie's purpose and deployment configuration.
 - Evidence: Firefox Developer Tools → Storage → Cookies.
 - Status: Preliminary finding; verify each cookie's exact attributes before assigning a risk level.
+
+Observation 5: Local Service Detection Using Nmap
+
+- Target: OWASP Juice Shop (local lab)
+- Target IP: 127.0.0.1
+- Port: 42000/tcp
+- Scan Type: TCP Connect and Service Version Detection
+- Result: Port 42000 was found open.
+- Service Identification: Nmap could not identify the exact service/version.
+- HTTP Response: The service returned HTTP 200 OK.
+- Security Impact: No vulnerability was confirmed by this scan.
+- Status: Informational observation.
