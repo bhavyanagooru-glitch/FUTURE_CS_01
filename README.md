@@ -45,3 +45,55 @@ Deliverables
 Disclaimer
 
 All testing is limited to authorized environments and is performed for educational purposes.
+
+
+
+
+Website Vulnerability Assessment – FUTURE_CS_01
+
+Project Overview
+
+This project documents a vulnerability assessment performed as part of the Future Interns Cyber Security Internship Task 1.
+
+Objective
+
+To identify and document potential security weaknesses through authorized, read-only security testing.
+
+Target
+
+OWASP Juice Shop – Local Lab
+URL: "http://127.0.0.1:42000/"
+
+Tools Used
+
+- Kali Linux
+- OWASP ZAP – Passive Scan
+- Nmap
+- Firefox Developer Tools
+
+Testing Activities
+
+- HTTP response header inspection
+- Cookie attribute review
+- Local service detection using Nmap
+- OWASP ZAP passive security analysis
+- Documentation of potential security findings
+- Risk classification and remediation recommendations
+
+Evidence
+
+Screenshots and supporting evidence are available in the "evidence" folder.
+
+Assessment Notes
+
+Detailed observations are available in "report/assessment-notes.md".
+
+Scope and Limitations
+
+Testing was performed against a locally hosted OWASP Juice Shop lab. Only passive and read-only checks were performed. No exploitation, brute force, or denial-of-service testing was conducted.
+
+The findings are scanner observations and preliminary checks; they are not all confirmed vulnerabilities.
+
+Disclaimer
+
+This project was conducted for educational purposes in an authorized local lab environment.
