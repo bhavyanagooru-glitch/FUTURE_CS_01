@@ -1,0 +1,29 @@
+
+Evidence – OWASP ZAP Passive Scan (Observations 6–17)
+
+This folder contains screenshots and supporting evidence collected during the authorized vulnerability assessment of the OWASP Juice Shop local lab.
+
+Tool Used: OWASP ZAP – Passive Scan
+
+Target: http://127.0.0.1:42000/
+
+Observations Covered:
+
+- Observation 6: Content Security Policy (CSP) Header Not Set
+- Observation 7: Missing Anti-clickjacking Header
+- Observation 8: Session ID in URL Rewrite
+- Observation 9: Vulnerable JavaScript Library
+- Observation 10: Cross-Domain JavaScript Source File Inclusion
+- Observation 11: Private IP Disclosure
+- Observation 12: Timestamp Disclosure – Unix
+- Observation 13: X-Content-Type-Options Header Missing
+- Observation 14: Information Disclosure – Suspicious Comments
+- Observation 15: Cross-Domain Misconfiguration (CORS)
+- Observation 16: Modern Web Application
+- Observation 17: Retrieved from Cache
+
+Purpose:
+
+These screenshots document the alerts identified during passive security testing. Risk levels and confidence values are recorded as reported by OWASP ZAP.
+
+Note: These are scanner observations from a local testing environment. They do not all represent confirmed or exploitable vulnerabilities. Further verification may be required.
